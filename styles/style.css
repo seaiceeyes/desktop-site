@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Roboto';
+    src:    
+        url('../resources/fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:
+        url('../resources/fonts/Roboto-Bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* background color */
+    --containers-color: #e0ebff;
+
+    /* information-bar colors */
+    --inf-bar-text-color: #383d44;
+    --inf-bar-text-font: 'Roboto', sans-serif;
+    --inf-bar-text-font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-bar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3vh;
+    width: 100%;
+    background-color: var(--containers-color);
+}
+
+.desktop-container {
+    height: 93vh;
+    width: 100%;
+    background-image: url(../resources/desktop_background/5564526.jpg);
+}
+
+.nav-bar-container {
+    height: 4vh;
+    width: 100%;
+    background-color: var(--containers-color);
+    
+}
+
+/* INFORMATION CONTAINER */
+ .information-container {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+ }
+
+ .information-container img {
+    margin-right: 10px;
+    height: auto;
+    width: 20px;
+ }
+
+.information-container .current-date{
+    font-family: var(--inf-bar-text-font);
+    font-weight: var(--inf-bar-text-font-weight);
+    color: var(--inf-bar-text-color);
+}
+
+/* USER INFORMATION */
+.user-information {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.user-information p{
+    font-family: var(--inf-bar-text-font);
+    font-weight: var(--inf-bar-text-font-weight);
+    color: var(--inf-bar-text-color)
+}
