@@ -24,6 +24,13 @@
     --inf-bar-text-color: #383d44;
     --inf-bar-text-font: 'Roboto', sans-serif;
     --inf-bar-text-font-weight: 700;
+
+    /* navigation-bar container colors */
+    --nav-bar-containers-color: #c7dbff;
+
+    /* desktop container */
+    --desktop-grid-columns: 6rem;
+    --desktop-grid-rows: 7rem;
 }
 
 * {
@@ -32,6 +39,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+/* GENERAL CONTAINERS STYLES  */
 
 body {
     display: flex;
@@ -47,18 +56,23 @@ body {
     background-color: var(--containers-color);
 }
 
-.desktop-container {
+.desktop {
     height: 93vh;
     width: 100%;
     background-image: url(../resources/desktop_background/5564526.jpg);
 }
 
 .nav-bar-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: left;
     height: 4vh;
     width: 100%;
-    background-color: var(--containers-color);
+    background-color: var(--nav-bar-containers-color);
     
 }
+
+/* INFORMATION-BAR CONTAINER */
 
 /* INFORMATION CONTAINER */
  .information-container {
@@ -92,4 +106,86 @@ body {
     font-family: var(--inf-bar-text-font);
     font-weight: var(--inf-bar-text-font-weight);
     color: var(--inf-bar-text-color)
+}
+
+/* NAVIGATION CONTAINER */
+
+.nav-bar-container .nav-bar-button {
+    background: url(../resources/navigation-bar/nav-bar-button.svg) no-repeat center / cover;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav-bar-container{justify-content: center;}
+}
+
+
+/* DESKTOP CONTAINER */
+.desktop-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, var(--desktop-grid-columns));
+    grid-template-rows: repeat(4, var(--desktop-grid-rows));
+    grid-auto-flow: column;
+
+}
+
+.desktop-container .desktop-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.desktop-container .desktop-button img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    
+}
+
+.desktop-container .desktop-button p{
+    font-family: var(--inf-bar-text-font);
+    font-weight: var(--inf-bar-text-font-weight);
+    color: var(--inf-bar-text-color);
+}
+
+@media (max-width: 600px) {
+  .desktop-container {
+    padding-top: 1vh;
+    display: grid;
+    grid-template-columns: repeat(5, calc(100% / 5));
+    grid-template-rows: repeat(5, minmax(20%, 20%));
+    column-gap: 2vh;
+  }
+  
+  .desktop-container .desktop-button img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 50%;
+    width: 100%;
+  }
+
+  .work-button {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .github-button {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .education-button {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
