@@ -141,7 +141,7 @@ body {
     flex-direction: column;
 
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     background: none;
 }
 
@@ -156,6 +156,11 @@ body {
     font-family: var(--inf-bar-text-font);
     font-weight: var(--inf-bar-text-font-weight);
     color: var(--inf-bar-text-color);
+}
+
+.desktop-container .desktop-button:hover {
+    background-color: #B3D6EC;
+    border-radius: 20px;
 }
 
 @media (max-width: 600px) {
