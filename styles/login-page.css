@@ -27,6 +27,7 @@
     --login-page-color: #6E8FC1;
 
     /* TEXT */
+    --login-h1-text-color: #383d44;
     --login-text-color: #f2faff;
     --login-text-font: 'Roboto', sans-serif;
     --login-text-font-weight: 700;
@@ -46,6 +47,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    visibility: visible;
 }
 
 
@@ -79,4 +81,32 @@ body {
   .login-container .login-form input {
    width: 70vw;
   }
+}
+
+
+.login-welcome {
+    position: absolute;
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.login-welcome img:first-child {
+    height: 10rem;
+    padding-bottom: 1rem;
+}
+
+.login-welcome h1 {
+    color: var(--login-h1-text-color);
+    font-family: var(--login-text-font);
+    font-weight: var(--login-text-font-weight);
+}
+
+.login-welcome img:last-child {
+    padding-top: 1rem;
+    height: 3rem;
+    width: auto;
 }
