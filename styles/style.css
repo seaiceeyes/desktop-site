@@ -46,6 +46,7 @@
 body {
     display: flex;
     flex-direction: column;
+
 }
 
 .information-bar-container{
@@ -118,6 +119,20 @@ body {
     cursor: pointer;
     height: 30px;
     width: 30px;
+}
+
+.window-bar {
+    margin-left: 1rem;
+    background-color: #f2faff;
+    border: 0.125rem solid;
+    border-radius: 0.6rem;
+}
+
+.window-bar-text {
+    padding: 0rem 0.6rem 0rem 0.6rem;
+    font-family: var(--inf-bar-text-font);
+    font-weight: var(--inf-bar-text-font-weight);
+    color: var(--inf-bar-text-color);
 }
 
 

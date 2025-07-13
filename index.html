@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desktop</title>
+
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/navigation-bar.css">
     <link rel="stylesheet" href="/styles/buttons-activity.css">
+    <link rel="stylesheet" href="/styles/windows.css">
+
     <script src="/scripts/clock.js" defer></script>
     <script src="/scripts/nameOS.js" defer></script>
     <script src="/scripts/navigation-bar.js" defer></script>
 </head>
 <body>
+    <!-- BUTTONS ACTIVE SCREENS -->
+
     <div class="shout-down"></div>
     <div class="sleep-screen">
         <img src="/resources/login-container/sleep.svg" alt="sleep">
@@ -30,6 +35,8 @@
             <p class="current-date"></p>
         </div>
     </div>
+
+    <!-- DESKTOP -->
 
     <div class="desktop">
         <div class="desktop-container">
@@ -59,10 +66,39 @@
         </button>
         </div>
     </div>
-        
+
+    <!--  -->
+
+    <!-- WINDOWS CONTAINER -->
+
+    <div class="windows-container">
+        <img src="resources/desktop/folder.svg" alt="folder" class="windows-icon">
+        <p class="windows-text">Work Experience</p>
+        <button class="close-button">
+            <img src="/resources/windows/close-icon.svg" alt="close">
+        </button>
+
+        <div class="general-window work-window">
+            <div class="work-window-content">
+                <p class="work-window-year">September, 2019 - March, 2023</p>
+                <p class="work-window-science">Electronics-Technician</p>
+                <p class="work-window-college">Gomel State Machine Building College</p>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <!--  -->
+
+    <!-- NAVIGATION BAR  -->
 
     <div class="nav-bar-container">
         <button class="nav-bar-button" data-nav-bar-button></button>
+
+        <div class="window-bar">
+            <p class="window-bar-text">Work Experience</p>
+        </div>
     </div>
 
     <div class="button-menu">
@@ -79,5 +115,7 @@
             <p>Restart</p>
         </button>
     </div>
+
+    <!--   -->
 </body>
 </html>
