@@ -27,6 +27,7 @@
 
     /* navigation-bar container colors */
     --nav-bar-containers-color: #c7dbff;
+    --nav-bar-footer-color: #466EC4;
 
     /* desktop container */
     --desktop-grid-columns: 6rem;
@@ -64,11 +65,11 @@ body {
 
 .nav-bar-container {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: left;
     height: 4vh;
     width: 100%;
-    background-color: var(--nav-bar-containers-color);
+    background-color: var(--nav-bar-footer-color);
     
 }
 
@@ -115,12 +116,8 @@ body {
     border: none;
     padding: 0;
     cursor: pointer;
-    width: 40px;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .nav-bar-container{justify-content: center;}
+    height: 30px;
+    width: 30px;
 }
 
 

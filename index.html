@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desktop</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/navigation-bar.css">
+    <link rel="stylesheet" href="/styles/buttons-activity.css">
     <script src="/scripts/clock.js" defer></script>
     <script src="/scripts/nameOS.js" defer></script>
+    <script src="/scripts/navigation-bar.js" defer></script>
 </head>
 <body>
+    <div class="shout-down"></div>
+    <div class="sleep-screen">
+        <img src="/resources/login-container/sleep.svg" alt="sleep">
+    </div>
+    <div class="restart-screen">
+        <img src="/resources/login-container/loading.gif" alt="loading">
+    </div>
+
     <div class="information-bar-container">
         <div class="user-information">
             <p class="user-information-text"></p>
@@ -46,13 +57,26 @@
             <img src="resources/desktop/folder.svg" alt="folder">
             <p>Skills</p>
         </button>
-    </div>
         </div>
+    </div>
         
 
     <div class="nav-bar-container">
-        <button class="nav-bar-button">
-            
+        <button class="nav-bar-button" data-nav-bar-button></button>
+    </div>
+
+    <div class="button-menu">
+        <button data-sleep-button>
+            <img src="resources/navigation-bar/sleep-button.svg" alt="sleep-button">
+            <p>Sleep</p>
+        </button>
+        <button data-shut-down-button>
+            <img src="resources/navigation-bar/power-off-button.svg" alt="power-off">
+            <p>Shut Down</p>
+        </button>
+        <button data-restart-button>
+            <img src="resources/navigation-bar/restart-button.svg" alt="restart-button">
+            <p>Restart</p>
         </button>
     </div>
 </body>
