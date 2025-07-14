@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const usernameLocal = localStorage.getItem('username');
 
-    if(usernameLocal){
+    if (usernameLocal) {
         const nameClass = document.querySelector('.user-information-text');
         nameClass.textContent = `${usernameLocal} OS`;
     } else {

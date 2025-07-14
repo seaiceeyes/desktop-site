@@ -1,112 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src:    
-        url('../resources/fonts/Roboto-Regular-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("../resources/fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src:
-        url('../resources/fonts/Roboto-Bold-webfont.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("../resources/fonts/Roboto-Bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
-    --login-page-color: #6E8FC1;
+  --login-page-color: #6e8fc1;
 
-    /* TEXT */
-    --login-h1-text-color: #383d44;
-    --login-text-color: #f2faff;
-    --login-text-font: 'Roboto', sans-serif;
-    --login-text-font-weight: 700;
+  /* TEXT */
+  --login-h1-text-color: #383d44;
+  --login-text-color: #f2faff;
+  --login-text-font: "Roboto", sans-serif;
+  --login-text-font-weight: 700;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background: url(/resources/desktop_background/5564526.jpg);
-    display: flex;
-    justify-content: center ;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(/resources/desktop_background/5564526.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container .login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    visibility: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
 }
-
 
 .login-container .login-form input {
-    background-color: var(--login-page-color);
-    border: none;
-    border-radius: 20px;
-    height: 2rem;
-    width: 30vw;
-    padding: 30px;
+  background-color: var(--login-page-color);
+  border: none;
+  border-radius: 20px;
+  height: 2rem;
+  width: 30vw;
+  padding: 30px;
 
-    color: var(--login-text-color);
-    font-family: var(--login-text-font);
-    font-weight: var(--login-text-font-weight);
+  color: var(--login-text-color);
+  font-family: var(--login-text-font);
+  font-weight: var(--login-text-font-weight);
 }
 
-.login-container .login-form input:focus{
-    outline: none;
+.login-container .login-form input:focus {
+  outline: none;
 }
 
 .login-container .login-form input::placeholder {
-    color: var(--login-text-color);
+  color: var(--login-text-color);
 }
 
 .login-container .login-form img {
-    height: 10rem;
-    margin-bottom: 3rem;
+  height: 10rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 800px) {
   .login-container .login-form input {
-   width: 70vw;
+    width: 70vw;
   }
 }
 
-
 .login-welcome {
-    position: absolute;
-    top: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
+  position: absolute;
+  top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
 }
 
 .login-welcome img:first-child {
-    height: 10rem;
-    padding-bottom: 1rem;
+  height: 10rem;
+  padding-bottom: 1rem;
 }
 
 .login-welcome h1 {
-    color: var(--login-h1-text-color);
-    font-family: var(--login-text-font);
-    font-weight: var(--login-text-font-weight);
+  color: var(--login-h1-text-color);
+  font-family: var(--login-text-font);
+  font-weight: var(--login-text-font-weight);
 }
 
 .login-welcome img:last-child {
-    padding-top: 1rem;
-    height: 3rem;
-    width: auto;
+  padding-top: 1rem;
+  height: 3rem;
+  width: auto;
 }

@@ -8,11 +8,11 @@ const clock = () => {
     };
 
     const dateParts = new Intl.DateTimeFormat("en-US", optionsDate).formatToParts(currentDate);
-    
+
     const weekday = dateParts.find(part => part.type === 'weekday').value;
     const month = dateParts.find(part => part.type === 'month').value;
     const day = dateParts.find(part => part.type === 'day').value;
-    
+
     const date = `${weekday} ${month} ${day}`;
 
     const hours = currentDate.getHours().toString().padStart(2, '0');

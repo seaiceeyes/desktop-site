@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,9 @@
     <script src="/scripts/clock.js" defer></script>
     <script src="/scripts/nameOS.js" defer></script>
     <script src="/scripts/navigation-bar.js" defer></script>
+    <script src="/scripts/windowContent.js" defer></script>
 </head>
+
 <body>
     <!-- BUTTONS ACTIVE SCREENS -->
 
@@ -40,30 +43,30 @@
 
     <div class="desktop">
         <div class="desktop-container">
-            <button class="desktop-button work-button">
-            <img src="resources/desktop/folder.svg" alt="folder">
-            <p>Work Experience</p>
-        </button>
+            <button class="desktop-button work-button" data-work-button>
+                <img src="resources/desktop/folder.svg" alt="folder">
+                <p data-work-button-text>Work Experience</p>
+            </button>
 
-        <button class="desktop-button github-button">
-            <img src="resources/desktop/github-mark-white.svg" alt="github-logo" class="github-logo">
-            <p>GitHub</p>
-        </button>
+            <button class="desktop-button github-button" data-github-button>
+                <img src="resources/desktop/github-mark-white.svg" alt="github-logo" class="github-logo">
+                <p>GitHub</p>
+            </button>
 
-        <button class="desktop-button education-button">
-            <img src="resources/desktop/folder.svg" alt="folder">
-            <p>Education</p>
-        </button>
+            <button class="desktop-button education-button" data-education-button>
+                <img src="resources/desktop/folder.svg" alt="folder">
+                <p data-education-button-text>Education</p>
+            </button>
 
-        <button class="desktop-button email-button">
-            <img src="resources/desktop/email-white.svg" alt="email">
-            <p>Email</p>
-        </button>
+            <button class="desktop-button email-button" data-email-button>
+                <img src="resources/desktop/email-white.svg" alt="email">
+                <p>Email</p>
+            </button>
 
-        <button class="desktop-button skills-button">
-            <img src="resources/desktop/folder.svg" alt="folder">
-            <p>Skills</p>
-        </button>
+            <button class="desktop-button skills-button" data-skills-button>
+                <img src="resources/desktop/folder.svg" alt="folder">
+                <p data-skills-button-text>Skills</p>
+            </button>
         </div>
     </div>
 
@@ -72,23 +75,18 @@
     <!-- WINDOWS CONTAINER -->
 
     <div class="windows-container">
-        <img src="resources/desktop/folder.svg" alt="folder" class="windows-icon">
-        <p class="windows-text">Work Experience</p>
-        <button class="close-button">
-            <img src="/resources/windows/close-icon.svg" alt="close">
-        </button>
+        <div class="windows-bar-information">
+            <img src="resources/desktop/folder.svg" alt="folder" class="windows-icon">
+            <p class="windows-text"></p>
 
-        <div class="general-window work-window">
-            <div class="work-window-content">
-                <p class="work-window-year">September, 2019 - March, 2023</p>
-                <p class="work-window-science">Electronics-Technician</p>
-                <p class="work-window-college">Gomel State Machine Building College</p>
-            </div>
+            <button class="close-button" data-window-close-button>
+                <img src="/resources/windows/close-icon.svg" alt="close">
+            </button>
         </div>
 
-
+        <!-- WINDOW CONTENT -->
     </div>
-    
+
     <!--  -->
 
     <!-- NAVIGATION BAR  -->
@@ -96,8 +94,8 @@
     <div class="nav-bar-container">
         <button class="nav-bar-button" data-nav-bar-button></button>
 
-        <div class="window-bar">
-            <p class="window-bar-text">Work Experience</p>
+        <div class="window-bar" data-nav-bar-container>
+            <p class="window-bar-text" data-window-bar-text></p>
         </div>
     </div>
 
@@ -118,4 +116,5 @@
 
     <!--   -->
 </body>
+
 </html>

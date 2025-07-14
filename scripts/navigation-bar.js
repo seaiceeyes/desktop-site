@@ -3,7 +3,7 @@ const buttonContainer = document.querySelector(".button-menu");
 const navBarButton = document.querySelector(".nav-bar-button");
 
 const sleepButton = document.querySelector("[data-sleep-button]");
-const sleepScreen =document.querySelector(".sleep-screen");
+const sleepScreen = document.querySelector(".sleep-screen");
 
 const shutDownButton = document.querySelector("[data-shut-down-button]");
 const shutDown = document.querySelector(".shout-down");
@@ -26,16 +26,16 @@ eventListener(shutDownButton, shutDown, 5000);
 eventListener(restartButton, restartScreen, 2000);
 
 
-function eventListener (buttonName, className, timeout) {
+function eventListener(buttonName, className, timeout) {
     buttonName.addEventListener("click", () => {
         className.classList.add("active");
         buttonContainer.classList.remove("active");
 
-    setTimeout(() => {
-        window.location.href = 'login.html';
-        className.classList.remove("active");
-    }, timeout);
-});
+        setTimeout(() => {
+            window.location.href = 'login.html';
+            className.classList.remove("active");
+        }, timeout);
+    });
 }
 
 sleepButton.addEventListener("click", (e) => {
@@ -45,7 +45,7 @@ sleepButton.addEventListener("click", (e) => {
 });
 
 document.addEventListener("click", () => {
-    if(sleepScreen.classList.contains('active')) {
+    if (sleepScreen.classList.contains('active')) {
         sleepScreen.classList.remove("active");
     }
 });
